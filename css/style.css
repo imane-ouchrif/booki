@@ -57,7 +57,7 @@ h2 {
     --filter-bg-color: #DEEBFF;
 }
 
-.search-bar {
+label {
     display: flex;
     border-radius: 15% 0 0 15%;
     background-color: var(--blue);
