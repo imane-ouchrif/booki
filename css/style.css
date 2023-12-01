@@ -13,6 +13,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  flex-direction: column;
 }
 
 nav {
@@ -32,19 +33,18 @@ a {
 
 nav a {
   display: flex;
-  gap: 30%;
+  gap: 35%;
   padding: 30px;
   border-top: solid transparent;
   justify-content: space-between;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
+  left: 850px;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #0065FC;
-  border-top-color: #0065FC;
+  color: var(--main-color);
+  border-top-color: var(--main-color);
   border-top-width: 2px;
 }
 
@@ -69,47 +69,50 @@ h2 {
 
 
 :root {
-  --main-color: #0065FC;
+  --main-color:#0065FC;
   --main-bg-color: #F2F2F2;
   --filter-bg-color: #DEEBFF;
 }
+/****** la barre de recherche ***********/
 
-label {
+form {
   display: flex;
   border-radius: 15% 0 0 15%;
-  background-color: var(--blue);
   border: none;
   color: var(--white);
-  font-weight: 300;
-  font-size: 2em;
+  font-weight: bold;
   padding: 9px 17px 8px 17px;
   margin: 15px 0 15px 0;
 }
 
 .fa-location-dot {
   color: black;
+  font-size: 1.5em;
   background-color: rgb(224, 221, 221);
   padding: 20px;
   border-radius: 15px 0 0 15px;
 }
 
-form {
-  border: 2px solid rgb(224, 221, 221);
+.input {
+  border: 2px solid rgb(224, 221, 221, 0.2);
   font-weight: 25px;
+  font-size: 25px;
 }
 
 .button {
   background-color: var(--main-color);
   color: white;
-  font-size: 25px;
+  font-size: 50px;
   border-radius: 0px 15px 15px 0px;
   padding: 20px;
 }
 
-.filters ul {
-  display: flex;
-  align-items: space-around space-between;
-  padding: 30px;
+.filters {
+  display: inline-flex;
+  padding-top: 18px;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 20px;
 }
 
 body {
@@ -174,6 +177,7 @@ body {
   justify-content: space-around;
   padding-top: 30px;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .hebergements-cards img {
@@ -207,7 +211,7 @@ body {
 .hebergements-cards .card-rating {
   margin-bottom: 5px;
   margin-top: 5px;
-  color: #0065FC;
+  color: var(--main-color);
 }
 
 .hebergements-cards .show-more {
@@ -261,7 +265,7 @@ body {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
-  color: #0065FC;
+  color: var(--main-color);
 }
 
 /***************** Activites ***********/
@@ -286,6 +290,10 @@ body {
   margin-right: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.activites figure {
+  margin: 0%;
 }
 
 .activites figcaption {
