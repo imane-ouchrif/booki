@@ -93,19 +93,21 @@ form {
   border-radius: 15px 0 0 15px;
 }
 
-.input {
+.form .input {
   border: 2px solid rgb(224, 221, 221, 0.2);
   font-weight: 25px;
   font-size: 25px;
 }
 
-.button {
+.form .button {
   background-color: var(--main-color);
   color: white;
   font-size: 50px;
   border-radius: 0px 15px 15px 0px;
   padding: 20px;
 }
+
+/****** les filtres ***********/
 
 .filters {
   display: inline-flex;
@@ -129,10 +131,29 @@ i {
 li:focus {
   background-color: var(--filter-bg-color);
 }
+/****** Info ***********/
 
-.header .p {
-  margin-left: 10px;
+.info {
+  display: flex;
+  padding: 10px;
 }
+
+.info .fa-info {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  border: 2px solid rgba(160, 159, 159, 0.2);
+  border-radius: 50%;
+  margin-right: 15px;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+
+
+}
+
+/****** Main ***********/
 
 body {
   display: flex;
