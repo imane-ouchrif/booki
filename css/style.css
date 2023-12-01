@@ -115,6 +115,25 @@ form {
   gap: 20px;
 }
 
+i {
+  color: var(--main-color);
+}
+
+.filters li {
+  border: 2px solid rgba(160, 159, 159, 0.2);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.filters li:hover,
+li:focus {
+  background-color: var(--filter-bg-color);
+}
+
+.header .p {
+  margin-left: 10px;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -126,8 +145,6 @@ body {
   padding: 0 50px;
   box-sizing: border-box;
 }
-
-
 
 .card {
   background-color: white;
