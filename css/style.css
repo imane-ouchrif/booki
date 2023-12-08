@@ -113,11 +113,13 @@ form button {
 
 /****** les filtres ***********/
 
+.filters h2 {
+  padding-top: 7px;
+}
 .filters {
   display: inline-flex;
   padding-top: 18px;
   flex-flow: row wrap;
-  align-items: center;
   gap: 20px;
   font-weight: bold;
 }
@@ -140,21 +142,20 @@ li:focus {
 
 .info {
   display: flex;
-  padding: 10px;
+  gap: 10px;
+  align-items: baseline;
 }
 
 .info .fa-info {
-  display: inline-block;
   color: var(--main-color);
   border: 2px solid rgba(160, 159, 159, 0.2);
   border-radius: 50%;
-  padding: 9px 1px 7px 16px;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  bottom: 11px;
-  right: 10px;
-  
+  padding: 5px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /****** Main ***********/
@@ -258,6 +259,12 @@ body {
   align-items: flex-end;
 }
 
+.hebergements p {
+  font-weight: bold;
+  margin:0%;
+  align-self: stretch;
+  font-size: larger;
+}
 
 
 /************** Populaires ******************/
