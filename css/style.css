@@ -492,6 +492,16 @@ footer h3 {
   
     .main-container {
       padding: 0;
+      width: 100%;
+    }
+    main .populaires {
+      display: flex;
+      flex-direction: column;
+      order: -1;
+    }
+
+    main h2 {
+      font-size: 23px;
     }
     
 /* header responsive telephone */
@@ -567,11 +577,50 @@ footer h3 {
 
     .filters li {
       margin-top: 20px;
-      border-width: calc((100% - 20px) / 2);
+      padding: 4px 19px;
     }
 
+    .filters i {
+      margin-right: 10px;
+    }
     .filters ul {
       margin-bottom: 35px;
+    }
+
+    /*** main responsive telephone ***/
+
+    .populaires-cards {
+      flex-flow: column wrap;
+      width: 100%;
+    }
+
+    .populaires-cards a {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .populaires-cards img {
+      width: 26%;
+      height: 146px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    .populaires-cards .card-title {
+      font-size: 22px;
+    }
+
+    .populaires-cards .card-subtitle {
+      font-size: 20px;
+    }
+
+    .populaires-cards .card-rating {
+      font-size: 20px;
+      margin-top: 24px;;
+    }
+
+
+    main .hebergements {
+      background-color: var(--white);
     }
   /* ... */
 }
