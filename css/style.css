@@ -32,13 +32,13 @@ a {
   text-decoration: none;
 }
 
-nav a {
+nav li {
   padding: 30px 0;
   border-top: 2px solid transparent;
 }
 
-nav a:hover,
-nav a:focus {
+nav li:hover,
+nav li:focus {
   color: var(--main-color);
   border-color: var(--main-color);
 }
@@ -510,30 +510,40 @@ footer h3 {
     }
 
     header nav {
+      display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    nav a {
-      border-bottom: 2px solid transparent;
-      border-top: none;
-      padding-bottom: 10px;
+    nav ul {
+      display: flex;
       text-align: center;
+      width: 100%;
+      gap: 0;
+    }
+
+    nav li {
+      border-bottom: 2px solid transparent;
+      width: 50%;
+      padding: 10px 0;
     }
     
-    nav a:hover,
-    nav a:focus {
+    nav li:hover,
+    nav li:focus {
+      border-top: none;
       color: var(--main-color);
       border-color: var(--main-color);
+      border-width: 100%;
     }
 
     header h1 {
-      margin-top: 30px 0 8px 0;
+      margin: 30px 0 8px 0;
     }
 
     form {
       border-radius: 15px;
       padding: 15px 0 15px 0;
+      position: relative;
     }
 
     form .fa-location-dot {
@@ -559,6 +569,9 @@ footer h3 {
     form button {
       border-radius: 15px;
       box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+      position: absolute;
+      z-index: 1;
+      right: 5%;
     }
 
     .filters, .filters h2 {
@@ -569,9 +582,18 @@ footer h3 {
       display: flex;
     }
 
+    .filters ul {
+      display: flex;
+      margin-bottom: 35px;
+      flex-flow: row wrap;
+      gap: 20px 10px;
+      width: 100%;
+
+    }
+
     .filters li {
       display: flex;
-      width: calc( (100% - 20px) / 2);
+      width: calc( (90% - 20px) / 2);
       box-sizing: border-box;
       height: 50px;
       padding: 10px;
@@ -581,10 +603,6 @@ footer h3 {
 
     .filters i {
       margin-right: 10px;
-    }
-    .filters ul {
-      flex: 1 0 0;
-      margin-bottom: 35px;
     }
 
     /*** main responsive telephone ***/
