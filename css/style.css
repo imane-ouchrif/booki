@@ -553,7 +553,9 @@ footer h3 {
     form input {
       width: 100%;
       align-self: stretch;
-      padding: 14px;
+      padding: 14px 114px 14px 24px;
+      border-radius: 0 15px 15px 0;
+      font-size: 18px;
     }
 
     form i {
@@ -571,7 +573,7 @@ footer h3 {
       box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.2);
       position: absolute;
       z-index: 1;
-      right: 3%;
+      right: 5%;
       top: 50%;
       transform: translateY(-50%);
       padding: 17px 18px;
@@ -579,10 +581,6 @@ footer h3 {
 
     .filters, .filters h2 {
       padding-top: 0;
-    }
-
-    .filters {
-      display: flex;
     }
 
     .filters ul {
@@ -599,12 +597,15 @@ footer h3 {
       width: calc( (100% - 20px) / 2);
       box-sizing: border-box;
       height: 50px;
-      font-size: 14px;
+      font-weight: 700;
       align-items: center;
       margin-right: 0;
     }
 
     .filters i {
+      font-size: 22px;
+      height: 22px;
+      width: 22px;
       margin-right: 10px;
     }
 
