@@ -62,15 +62,14 @@ nav ul{
 
 li {
   display: inline-block;
-  margin-right: 10px;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.3rem;
   margin: 0;
 }
 
@@ -87,10 +86,14 @@ form {
 
 .fa-location-dot {
   color: black;
-  font-size: 15px;
+  font-size: 1rem;
   background-color: rgb(224, 221, 221);
-  padding: 20px;
+  padding: 15px;
   border-radius: 15px 0 0 15px;
+}
+
+.fa-magnifying-glass {
+  display: none;
 }
 
 form input {
@@ -98,7 +101,7 @@ form input {
   border-bottom: 1px solid rgb(224, 221, 221);
   border-left: none;
   border-right: none;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
 }
@@ -106,9 +109,9 @@ form input {
 form button {
   background-color: var(--main-color);
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
   border-radius: 0px 16px 16px 0px;
-  padding: 20px;
+  padding: 15px;
   border: none;
 }
 
@@ -119,10 +122,15 @@ form button {
 }
 .filters {
   display: inline-flex;
+  gap: 15px;
   padding-top: 18px;
   flex-flow: row wrap;
-  gap: 20px;
   font-weight: bold;
+}
+
+.filters ul {
+  display: flex;
+  gap: 15px;
 }
 
 i {
@@ -132,7 +140,9 @@ i {
 .filters li {
   border: 2px solid rgba(160, 159, 159, 0.2);
   border-radius: 30px;
-  padding: 10px;
+  padding: 4px 19px 4px 19px;
+  height: 30px;
+  gap: 10px;
 }
 
 .filters li:hover,
@@ -523,14 +533,14 @@ footer h3 {
     }
 
     nav li {
-      border-bottom: 2px solid transparent;
+      border-bottom: 2px solid var(--main-bg-color);
       width: 50%;
       padding: 10px 0;
+      border-top: none;
     }
     
     nav li:hover,
     nav li:focus {
-      border-top: none;
       color: var(--main-color);
       border-color: var(--main-color);
       border-width: 100%;
@@ -543,19 +553,21 @@ footer h3 {
     form {
       border-radius: 15px;
       padding: 15px 0 15px 0;
-      position: relative;
     }
 
     form .fa-location-dot {
       padding: 18px;
     }
 
+    .fa-magnifying-glass {
+      display: block;
+      color: var(--white);
+    }
+
     form input {
       width: 100%;
       align-self: stretch;
-      padding: 14px 114px 14px 24px;
-      border-radius: 0 15px 15px 0;
-      font-size: 18px;
+      padding: 15px;
     }
 
     form i {
@@ -571,12 +583,8 @@ footer h3 {
     form button {
       border-radius: 15px;
       box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.2);
-      position: absolute;
-      z-index: 1;
-      right: 5%;
-      top: 50%;
-      transform: translateY(-50%);
       padding: 17px 18px;
+      margin-left: -15px;
     }
 
     .filters, .filters h2 {
@@ -585,21 +593,23 @@ footer h3 {
 
     .filters ul {
       display: flex;
-      margin-bottom: 35px;
+      margin-bottom: 25px;
       flex-flow: row wrap;
-      gap: 20px;
+      gap: 10px;
       width: 100%;
 
     }
 
     .filters li {
       display: flex;
-      width: calc( (100% - 20px) / 2);
+      width: calc( (100% - 10px) / 2);
       box-sizing: border-box;
       height: 50px;
       font-weight: 700;
       align-items: center;
       margin-right: 0;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
     }
 
     .filters i {
