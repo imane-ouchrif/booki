@@ -245,7 +245,7 @@ body {
 
 .hebergements-cards img {
   width: 100%;
-  height: 124px;
+  height: 114px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -254,19 +254,18 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   white-space: nowrap;
-  padding: 0 15px;
+  padding: 0 10px;
   gap: 8px;
 }
 
 .hebergements-cards .card-title {
   margin: 10px 0 4px 0;
-  justify-content: center;
 }
 
 .hebergements-cards .card-subtitle {
   margin: 0;
   font-weight: normal;
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 
 .hebergements-cards .card-rating {
@@ -442,13 +441,11 @@ footer h3 {
   }
 
   .hebergements-cards .card-title {
-    font-size: 0.7rem;
     margin: 0;
   }
 
   .hebergements-cards .card-subtitle {
     font-weight: normal;
-    font-size: 10px;
     margin: 8px 0 0;
   }
 
@@ -466,6 +463,7 @@ footer h3 {
   .populaires-cards {
     flex-direction: row;
     gap: 20px;
+    height: 136px;
   }
 
   .populaires-cards a {
@@ -474,13 +472,16 @@ footer h3 {
   }
 
   .populaires-cards img {
-    width: 33%;
-    height: 100px;
-    border-radius: 20px 0 0 20px;
+    width: 40%;
+    height: 136px;
+  }
+
+  .populaires-cards .card-title {
+    font-size: 0.9rem;
   }
 
   .populaires-cards .card-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .activites img {
@@ -634,7 +635,7 @@ footer h3 {
     }
 
     main h2 {
-      font-size: 23px;
+      font-size: 1.5rem;
     }
 
     .populaires-cards {
@@ -649,7 +650,7 @@ footer h3 {
 
     .populaires-cards img {
       width: 26%;
-      height: 146px;
+      height: 136px;
       border-radius: 20px 0 0 20px;
     }
 
