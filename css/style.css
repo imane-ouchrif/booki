@@ -614,7 +614,7 @@ footer h3 {
       font-weight: 700;
       align-items: center;
       margin-bottom: 10px;
-      font-size: 0.7rem;
+      font-size: 0.75rem;
     }
 
     .filters i {
@@ -635,22 +635,21 @@ footer h3 {
     }
 
     main h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     .populaires-cards {
+      display: flex;
       flex-flow: column wrap;
       width: 100%;
     }
 
     .populaires-cards a {
       width: 100%;
-      gap: 10px;
     }
 
     .populaires-cards img {
-      width: 26%;
-      height: 136px;
+      width: 33%;
       border-radius: 20px 0 0 20px;
     }
 
@@ -670,11 +669,13 @@ footer h3 {
 
     main .hebergements {
       background-color: var(--white);
+      gap: 15px;
     }
 
     main .hebergements-cards {
       display: flex;
       flex-direction: column;
+      gap: 15px;
     }
 
     .hebergements-cards a {
