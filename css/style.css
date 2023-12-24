@@ -339,6 +339,7 @@ body {
 .populaires-cards .card-rating i{
   margin-bottom: 5px;
   padding: 0;
+  width: 12px;
 }
 
 /***************** Activites ***********/
@@ -485,7 +486,7 @@ footer h3 {
   }
 
   .activites img {
-    height: 200px;
+    height: 190px;
     object-fit: cover;
     width: 100%;
   }
@@ -495,7 +496,7 @@ footer h3 {
   }
 
   .activites figcaption {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     padding: 10px 10px 10px 15px;
   }
 }
@@ -662,7 +663,7 @@ footer h3 {
     }
 
     .populaires-cards .card-rating {
-      font-size: 0.8rem;
+      font-size: 0.95rem;
       margin-top: 24px;
     }
 
