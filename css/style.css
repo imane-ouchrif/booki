@@ -627,7 +627,7 @@ footer h3 {
 
     main .populaires {
       display: flex;
-      flex-flow: column wrap;
+      flex-direction: column;
       order: -1;
       border-radius: 0;
     }
@@ -636,8 +636,20 @@ footer h3 {
       font-size: 1.3rem;
     }
 
+    .populaires-cards {
+      display: flex;
+      flex-flow: column wrap;
+      gap: 15px;
+    }
+    
+    .populaires-cards a {
+      display: flex;
+      width: calc((100% - 15px) / 3); 
+    }
+
     .populaires-cards img {
       width: 33%;
+
     }
 
     .populaires-cards .card-title {
