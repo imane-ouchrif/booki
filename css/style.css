@@ -420,7 +420,7 @@ footer h3 {
   }
 
   .filters ul {
-    padding-top: none;
+    padding-top: 0;
   }
 
   .info {
