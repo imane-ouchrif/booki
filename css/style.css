@@ -455,7 +455,6 @@ footer h3 {
   }
 
   .populaires {
-
     width: 100%;
     margin-top: 50px;
     gap: 20px;
@@ -624,13 +623,11 @@ footer h3 {
       align-items: center;
     }
 
-
-
     /*** main responsive telephone ***/
 
     main .populaires {
       display: flex;
-      flex-direction: column;
+      flex-flow: column wrap;
       order: -1;
       border-radius: 0;
     }
@@ -639,19 +636,8 @@ footer h3 {
       font-size: 1.3rem;
     }
 
-    .populaires-cards {
-      display: flex;
-      flex-flow: column wrap;
-      width: 100%;
-    }
-
-    .populaires-cards a {
-      width: 100%;
-    }
-
     .populaires-cards img {
       width: 33%;
-      border-radius: 20px 0 0 20px;
     }
 
     .populaires-cards .card-title {
