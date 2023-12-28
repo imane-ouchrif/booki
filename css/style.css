@@ -554,7 +554,6 @@ footer h3 {
     nav li:focus {
       color: var(--main-color);
       border-color: var(--main-color);
-      border-width: 100%;
     }
 
     header h1 {
