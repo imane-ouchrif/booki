@@ -66,7 +66,7 @@ li {
 }
 
 h1 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -121,6 +121,7 @@ form button {
   display: flex;
   align-items: center;
 }
+
 .filters {
   display: inline-flex;
   gap: 15px;
@@ -618,7 +619,7 @@ footer h3 {
       font-weight: 700;
       align-items: center;
       margin-bottom: 10px;
-      font-size: 0.75rem;
+      font-size: 1rem;
     }
 
     .filters i {
