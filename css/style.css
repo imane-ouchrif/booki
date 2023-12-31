@@ -619,7 +619,7 @@ footer h3 {
       font-weight: 700;
       align-items: center;
       margin-bottom: 10px;
-      font-size: 1rem;
+      font-size: 0.75rem;
     }
 
     .filters i {
@@ -635,10 +635,6 @@ footer h3 {
       flex-direction: column;
       order: -1;
       border-radius: 0;
-    }
-
-    main h2 {
-      font-size: 1.3rem;
     }
 
     .populaires-cards {
